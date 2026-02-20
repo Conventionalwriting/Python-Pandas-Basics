@@ -6,12 +6,12 @@ import pandas as pd
 
 # DataFrame = A tabular data structure with rows and Columns
 
-# Importing files
+# Importing files =
 
-# Selection
+# Selection =
 
-# Filtering
+# Filtering =
 
-# Aggregation
+# Aggregation =
 
-# Data Cleaning
+# Data Cleaning =
