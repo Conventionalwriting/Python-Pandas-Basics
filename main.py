@@ -41,6 +41,7 @@ import pandas as pd
 #print(series_3[series_3 <= 200])
 
 # Using a dictionary instead of a list and applying my learning
+"""
 meters_run = {"Day 1": 100, "Day 2": 200, "Day 3": 500}
 series_4 = pd.Series(meters_run)
 print("Printing Series")
@@ -61,11 +62,53 @@ print("Greater than 'or' equal")
 print(series_4[series_4 >= 200])
 print("Less than 'or' equal")
 print(series_4[series_4 <= 500])
-
+"""
 
 # DataFrame = A tabular data structure with rows and Columns
+#             2-Dimensional like an Excel sheet
 
-# Importing files =
+#    Basic Example:
+#data_5 = {"Name": ["Spongebob","Patrick","Squidward"],
+        "Age":[30, 35, 50]
+}
+
+#df = pd.DataFrame(data_5)
+#print(df)
+
+# Indexing
+#df = pd.DataFrame(data_5, index =["Employee 1","Employee 2","Employee 3"])
+#print(df)
+
+# loc property
+#print(df.loc["Employee 1"])
+#print(df.loc["Employee 2"])
+#print(df.loc["Employee 3"])
+
+#Select by integer location (.iloc property)
+#print(df.iloc[1])
+#print(df.iloc[2])
+
+# Add new column
+#df["Job"] = ["Cook","N/A","Cashier"]
+#print(df)
+
+# Add new row
+# (the easiest way is to create a new dataframe and concatinate it)
+#new_row = pd.DataFrame([{"Name":"Sandy","Age":28,"Job":"Engineer"}],
+#                        index=["Employee 4"])
+#df = pd.concat([df, new_row])
+#print(df)
+
+# Add new rows
+#new_rows = pd.DataFrame([{"Name":"Sandy","Age":28,"Job":"Engineer"},
+#                         {"Name":"Eugene","Age":60,"Job":"Manager"}],
+#                        index=["Employee 4","Employee 5"])
+
+#df = pd.concat([df, new_rows])
+#print(df)
+
+# Importing files: more specifically CSV(Comma-Separated values) and
+# JSON(JavaScript Object Notation) files
 
 # Selection =
 
